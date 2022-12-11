@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://cdn.tiny.cloud/1/kjy9qahkb1ucy75rlef2z0dmex7hl7o4uibno4cb4h70d1tw/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+  <script src="https://<hostname.tld>/tinymce.min.js" referrerpolicy="origin"></script>
+  <!-- The script above *must* be listed first because it must be loaded first. -->
+  <!-- If it is not listed (and loaded) first, TinyMCE will not work. -->
+  <!-- Also: <hostname.tld> above *must* be replaced with the TinyMCE server’s FQDN. -->
+  <script src="https://cdn.tiny.cloud/1/kjy9qahkb1ucy75rlef2z0dmex7hl7o4uibno4cb4h70d1tw/tinymce/6/plugins.min.js" referrerpolicy="origin"></script>
+  <!-- This script provides access to tinyMCE’s premium plugins. -->
 </head>
 <body>
   <textarea>
